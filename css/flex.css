@@ -1,0 +1,134 @@
+body {
+  font-size: 12pt;
+  font-family: "Karla", sans-serif;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+nav {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+nav li {
+  float: none;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav li a {
+  color: #000;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #eaeaea;
+  text-decoration: none;
+}
+
+header {
+  background-image: url("../images/Frankie1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh;
+}
+
+header h1 {
+  text-align: left;
+  margin-left: 20px;
+  color: #fff;
+}
+
+main {
+  background-color: #f7f7f7;
+}
+
+.sidebar-left {
+  background-color: #eaeaea;
+  padding: 20px;
+  margin-top: 10px;
+  order: 1;
+}
+
+.sidebar-right {
+  background-color: #eaeaea;
+  padding: 20px;
+  margin-top: 10px;
+  order: 4;
+}
+
+.article-left {
+  background-color: #eaeaea;
+  margin-top: 10px;
+  padding: 20px;
+  order: 2;
+}
+
+#photo {
+  text-align: center;
+}
+
+.article-left img {
+  margin: 0 auto;
+  width: 40%;
+  border-radius: 150px;
+}
+
+.article-right {
+  background-color: #eaeaea;
+  margin-top: 10px;
+  padding: 20px;
+  order: 3;
+}
+
+.article-right img {
+  width: 30%;
+  border-radius: 150px;
+}
+
+footer {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #eaeaea;
+}
+
+h2 {
+  color: #645e52;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+a {
+  color: #000;
+}
+
+/*Media query som gör att innehållet i containern ändras från rader till kolumner när skärmbredden är max 768px */
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav li {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+  }
+}
